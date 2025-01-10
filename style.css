@@ -102,7 +102,8 @@ body,
     .attach-cat-badge-wrapper,
     #attach-cat-help,
     #summary-val,
-    #block-add-root-comment {
+    #block-add-root-comment,
+    .btn-add-comment {
         background-color: var(--background-color) !important;
         color: var(--text-color) !important;
     }
