@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@300&display=swap');
+
+:where(body) {
+  --header-color: none;
+}
+
+body, #main, #full-height-container, #announcement-banner, #main-header {
+  font-size: 1.1em;
+  font-family: "IBM Plex Sans";
+  /* font-family: "Montserrat"; */
+  font-weight: 300;
+  
+  background-color: Canvas !important;
+  color-scheme: light dark;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --hover-color: color-mix(in srgb, CanvasText, Canvas 85%);
+    --background-color: color-mix(in srgb, CanvasText, Canvas 95%);    
+    --aui-dropdown-bg-color: color-mix(in srgb, CanvasText, Canvas 85%);
+    --aui-body-background: var(--background-color);
+    --aui-page-background: var(--background-color);
+    --aui-btn-default-bg-color: red;
+    --aui-btn-bg: var(--background-color) !important;
+    --aui-btn-text: red;
+  }
+  
+  :where(body) {
+    /* --background-color: hsl(228, 5%, 15%); */
+    --header-color: hsl(228, 5%, 90%);
+    --text-color: color-mix(in srgb, CanvasText, Canvas 15%);;
+    
+    
+        /* --aui-item-active-bg: color-mix(in srgb, CanvasText, Canvas 15%); */
+
+
+  }
+  
+  .RecentContentItem_result-item-title__f9hg-, .SearchDrawerPanel_drawer-panel-content__2uGQD {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .aui-button {
+    --aui-btn-bg: var(--background-color);
+    --aui-btn-text: var(--text-color);
+    color: var(--text-color);
+  }
+  
+  .aui-button:hover {
+    background-color: var(--hover-color);
+    color: var(--text-color);
+  }
+  
+  #header a {
+    background-color: transparent !important;
+  }
+  
+  .update-item:hover {
+    background-color: color-mix(in srgb, CanvasText, Canvas 90%);
+  }
+  
+  .acs-side-bar, .aui-sidebar-wrapper, .content-sidebar, .content-header, .aui-page-panel
+  {
+    background-color: Canvas !important;
+  }
+  
+  .jira-issue { background-color: color-mix(in srgb, CanvasText, Canvas 85%); }
+  body, body a {
+    color: var(--text-color) !important;
+  }
+}
+
+#main-content h1, #main-content h2, #main-content h3, #main-content h4, #main-content h5, #main-content h6, #title-text, #title-text a {
+  font-family: "IBM Plex Serif";
+  font-weight: 400;
+  color: var(--header-color);
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.7em;
+  /* text-transform: uppercase; */
+}
+
+#content, #title-text {
+  width: 65%;
+  margin: auto;
+}
+
+#tinymce
+{
+  display: none;
+}
+
+.gliffy-container {
+  width: 100% !important;
+}
+
+#main-content
+{
+  max-width: 60em;
+}
+
+#main-content h1 {
+  font-size: 1.9em;
+}
+
+#main-content h2 {
+  font-size: 1.6em;
+}
+
+#main-content h3 {
+  font-size: 1.3em;
+}
+
+p, li {
+    font-size: 1.035em;
+    line-height: 32px;
+}
+
+ #main-content ol, #main-content ul
+{
+  margin-bottom: 2.14em;
+}
+
+
+.toc-macro li {
+  margin-top: auto !important;
+}
