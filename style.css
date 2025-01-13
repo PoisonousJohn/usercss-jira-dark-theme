@@ -25,6 +25,7 @@ body,
     :root {
         --hover-color: color-mix(in srgb, CanvasText, Canvas 85%);
         --background-color: color-mix(in srgb, CanvasText, Canvas 95%);
+        --background-color-light: color-mix(in srgb, CanvasText, Canvas 90%);
         --aui-dropdown-bg-color: color-mix(in srgb, CanvasText, Canvas 85%);
         --aui-body-background: var(--background-color);
         --aui-page-background: var(--background-color);
@@ -110,6 +111,27 @@ body,
 
     .editable-field:hover {
         background-color: var(--hover-color) !important;
+    }
+
+    .ghx-backlog-container,
+    .aui-list {
+        background-color: var(--background-color);
+    }
+
+    .aui-list-item.active a {
+        background-color: var(--hover-color) !important;
+    }
+
+    .ghx-backlog-header,
+    .js-issue {
+        background-color: var(--hover-color) !important;
+    }
+
+    .ghx-name,
+    .ghx-dates,
+    .aui-button,
+    .js-issue {
+        color: var(--text-color) !important;
     }
 }
 
