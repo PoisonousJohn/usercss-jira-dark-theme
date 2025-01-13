@@ -122,6 +122,7 @@ body,
         background-color: var(--hover-color) !important;
     }
 
+    .ghx-estimate,
     .ghx-backlog-header,
     .js-issue {
         background-color: var(--hover-color) !important;
@@ -130,7 +131,8 @@ body,
     .ghx-name,
     .ghx-dates,
     .aui-button,
-    .js-issue {
+    .js-issue,
+    aui-badge {
         color: var(--text-color) !important;
     }
 }
