@@ -160,10 +160,6 @@ body,
     margin: auto;
 }
 
-#tinymce {
-    display: none;
-}
-
 .gliffy-container {
     width: 100% !important;
 }
