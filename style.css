@@ -195,3 +195,24 @@ li {
 .toc-macro li {
     margin-top: auto !important;
 }
+
+@-moz-document domain("jira.my.games") {
+    #content {
+        width: 100% !important;
+    }
+}
+
+@-moz-document domain("confluence.my.games") {
+    #tinymce p {
+        font-size: 1.28em;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+        .SearchContentItem_content-text-container__3tL5v > * {
+            color: var(--text-color);
+        }
+        .SearchContentItem_content-text-container__3tL5v:hover > * {
+            color: var(--background-color);
+        }
+    }
+}
